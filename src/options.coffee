@@ -24,7 +24,7 @@ class Options
       renderDelay: 0
       template: 'html5bp'
 
-    @options = _.defaults defaults, options
+    @options = _.defaults options, defaults
 
     unless @options.templatePath?
       @options.templatePath = @templatePath @options.template

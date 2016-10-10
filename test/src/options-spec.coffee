@@ -8,6 +8,7 @@ describe 'Options', ->
       @sut = new Options {
         inputBody: 'input-body'
         outputPath: path.join(__dirname, 'output')
+        template: 'htmlbootstrap'
       }
 
     it 'should set the default options', ->
@@ -19,8 +20,8 @@ describe 'Options', ->
         inputBody: 'input-body'
         outputPath: path.join(__dirname, 'output')
         renderDelay: 0
-        template: 'html5bp'
-        templatePath: templatePath 'html5bp'
+        template: 'htmlbootstrap'
+        templatePath: templatePath 'htmlbootstrap'
         include: [
           {
             type: 'css',
@@ -31,4 +32,3 @@ describe 'Options', ->
             filePath: templatePath 'highlight.css'
           }
         ]
-
